@@ -1,0 +1,16 @@
+const getUserSchema = {
+    type: "object",
+    required: ["id", "name", "username", "email", "address", "phone", "website", "company"],
+    properties: {
+        id: { type: "integer" },
+        name: { type: "string" },
+        username: { type: "string" },
+        email: { type: "string" },
+        address: { type: "object" },
+        phone: { type: "string" },
+        website: { type: "string" },
+        company: { type: "object" }
+    }
+};
+
+module.exports = { getUserSchema };
