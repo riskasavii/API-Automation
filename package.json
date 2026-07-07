@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test/**/*.test.js --timeout 10000"
+    "test": "mocha test/**/*.test.js --timeout 10000 --reporter spec",
+    "test:report": "mocha test/**/*.test.js --timeout 10000 --reporter mocha-simple-html-reporter --reporter-options output=report.html"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +17,7 @@
     "ajv": "^8.20.0",
     "axios": "^1.17.0",
     "chai": "^6.2.2",
-    "mocha": "^11.7.6"
+    "mocha": "^11.7.6",
+    "mocha-simple-html-reporter": "^2.0.0"
   }
 }
